@@ -10,7 +10,22 @@ const App = () => {
         once! You move to next level when you click on all the images.
       </p>
       <Stats />
-      <Images />
+      <Images
+        images={[
+          {
+            name: "Conan",
+            url: "https://www.detectiveconanworld.com/wiki/images/archive/9/9e/20110914002215%21Conan_Edogawa_60px.jpg",
+          },
+          {
+            name: "Conan",
+            url: "https://www.detectiveconanworld.com/wiki/images/archive/9/9e/20110914002215%21Conan_Edogawa_60px.jpg",
+          },
+          {
+            name: "Conan",
+            url: "https://www.detectiveconanworld.com/wiki/images/archive/9/9e/20110914002215%21Conan_Edogawa_60px.jpg",
+          },
+        ]}
+      />
     </div>
   );
 };
