@@ -1,16 +1,17 @@
 const Images = (props) => {
   return (
-    <div>
+    <div className="flex ">
       {props.images.map((image) => {
         return (
-          <div className="">
+          <div className="flex flex-col items-center flex-wrap">
             <img
               src={image.url}
               alt={image.name}
               key={image.name}
               onClick={() => props.handleClick(image.name)}
+              className="w-2/3 rounded-xl shadow"
             />
-            <h2>{image.name}</h2>
+            <h2 className="text-[1.5em]">{image.name}</h2>
           </div>
         );
       })}
