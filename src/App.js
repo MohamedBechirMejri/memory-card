@@ -1,3 +1,6 @@
+import Stats from "./Components/Stats";
+import Images from "./Components/Images";
+
 const App = () => {
   return (
     <div>
@@ -6,6 +9,8 @@ const App = () => {
         Get points by clicking on an image but don't click on any more than
         once! You move to next level when you click on all the images.
       </p>
+      <Stats />
+      <Images />
     </div>
   );
 };
