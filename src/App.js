@@ -3,7 +3,7 @@ import Images from "./Components/Images";
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-gradient-to-t from-orange-600 to-pink-900 h-screen w-screen flex flex-col items-center justify-center text-center text-white">
       <h1>Detective Conan Memory Game</h1>
       <p>
         Get points by clicking on an image but don't click on any more than
