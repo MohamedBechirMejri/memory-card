@@ -2,7 +2,7 @@ import Stats from "./Components/Stats";
 import Images from "./Components/Images";
 import { useState } from "react";
 import { shuffle } from "./Components/Utils";
-import { ImagesData } from './Components/ImagesData';
+import  ImagesData  from "./Components/ImagesData";
 
 const App = () => {
   const [images, setImages] = useState(ImagesData[0]);

@@ -1,4 +1,4 @@
-export const ImagesData = [
+const ImagesData = [
   [
     // {
     //   name: "Conan",
@@ -42,3 +42,4 @@ export const ImagesData = [
     },
   ],
 ];
+export default ImagesData;
