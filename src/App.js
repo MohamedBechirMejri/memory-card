@@ -69,6 +69,7 @@ const App = () => {
               setScore(0);
               setClicked([]);
               setLevel(1);
+              setImages(ImagesData[0]);
               setIsGameOver(false);
             }}
           >
