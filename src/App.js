@@ -11,8 +11,12 @@ const App = () => {
   const [level, setLevel] = useState(1);
   const [isGameOver, setIsGameOver] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [won, setWon] = useState(false);
 
   useEffect(() => {
+    if (score === 5) {
+      setWon(true);
+    }
     if (score > topScore) setTopScore(score);
     if (clicked.length === images.length) {
       setLevel(level + 1);
@@ -35,10 +39,8 @@ const App = () => {
       setIsGameOver(true);
     } else {
       setScore(score + 1);
-
       setClicked([...clicked, name]);
     }
-
     setLoading(false);
   };
 
@@ -57,7 +59,29 @@ const App = () => {
         <Stats score={score} topScore={topScore} level={level} />
       </div>
 
-      {isGameOver ? (
+      {won ? (
+        <div className="flex flex-col items-center justify-center gap-4 transition-all ">
+          <h1 className="text-[2em] ">You Win!</h1>
+          <p className="  text-[1em]">
+            You have completed all the levels.
+            <br />
+            You can play again by clicking on the button below.
+          </p>
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+            onClick={() => {
+              setScore(0);
+              setTopScore(0);
+              setLevel(1);
+              setClicked([]);
+              setImages(ImagesData[0]);
+              setWon(false);
+            }}
+          >
+            Play Again
+          </button>
+        </div>
+      ) : isGameOver ? (
         <div className="flex flex-col items-center justify-center gap-4 transition-all ">
           <h1 className="text-[2em] ">Game Over</h1>
           <p className="  text-[1em]">
