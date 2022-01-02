@@ -14,7 +14,7 @@ const App = () => {
   const [won, setWon] = useState(false);
 
   useEffect(() => {
-    if (score === 52) {
+    if (score === 48) {
       setWon(true);
     }
     if (score > topScore) setTopScore(score);
