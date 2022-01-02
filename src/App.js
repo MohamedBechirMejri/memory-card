@@ -45,7 +45,7 @@ const App = () => {
   };
 
   return (
-    <div className="bg-gradient-to-t from-slate-600 to-slate-800 min-h-screen w-screen flex flex-col items-center justify-start text-center text-white   font-bold gap-8 select-none ">
+    <div className="bg-gradient-to-t from-orange-600 to-orange-400 min-h-screen w-screen flex flex-col items-center justify-start text-center text-white   font-bold gap-8 select-none p-8 gradient">
       <div className="flex justify-between text-left items-center w-full pl-2 pr-4">
         <div>
           <h1 className="text-[2em] ">Detective Conan Memory Game</h1>
