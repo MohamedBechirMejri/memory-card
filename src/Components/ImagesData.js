@@ -150,41 +150,16 @@ const ImagesData = [
       url: "https://www.detectiveconanworld.com/wiki/images/4/47/Yui_Uehara_Profile.jpg",
     },
   ],
-  [
-    {
-      name: "The Boss",
-      url: "https://www.detectiveconanworld.com/wiki/images/1/16/Renya_Karasuma_Profile.jpg",
-    },
-    {
-      name: "Gin",
-      url: "https://www.detectiveconanworld.com/wiki/images/8/89/S6-Gin.png",
-    },
-    {
-      name: "Vodka",
-      url: "https://www.detectiveconanworld.com/wiki/images/2/22/Vodka_Profile.jpg",
-    },
-    {
-      name: "Vermouth",
-      url: "https://www.detectiveconanworld.com/wiki/images/1/1b/EP813-Vermouth.jpg",
-    },
-    {
-      name: "Chianti",
-      url: "https://www.detectiveconanworld.com/wiki/images/a/af/Chianti_Profile.jpg",
-    },
-    {
-      name: "Korn",
-      url: "https://www.detectiveconanworld.com/wiki/File:Korn_Profile.jpg",
-    },
-  ],
+
   [
     {
       name: "Kaitou Kid",
       url: "https://www.detectiveconanworld.com/wiki/images/d/d1/Kaitou_Kid_Profile.png",
     },
-    {
-      name: "Aoko Nakamori",
-      url: "https://www.detectiveconanworld.com/wiki/File:Aoko_Nakomori_Profile.jpg",
-    },
+    // {
+    //   name: "Aoko Nakamori",
+    //   url: "https://www.detectiveconanworld.com/wiki/File:Aoko_Nakomori_Profile.jpg",
+    // },
     {
       name: "Kaito Kuroba",
       url: "https://www.detectiveconanworld.com/wiki/images/9/96/Kaito_Kuroba_Profile.jpg",
@@ -216,14 +191,25 @@ const ImagesData = [
   ],
   [
     {
-      name: "Scar Akai",
-      url: "https://www.detectiveconanworld.com/wiki/images/9/90/Scar_Akai_Profile.png",
+      name: "The Boss",
+      url: "https://www.detectiveconanworld.com/wiki/images/1/16/Renya_Karasuma_Profile.jpg",
     },
     {
-      name: "Yoko Okino",
-      url: "https://www.detectiveconanworld.com/wiki/images/b/bd/Yoko_Okino_Profile.jpg",
+      name: "Gin",
+      url: "https://www.detectiveconanworld.com/wiki/images/8/89/S6-Gin.png",
     },
-
+    {
+      name: "Vodka",
+      url: "https://www.detectiveconanworld.com/wiki/images/2/22/Vodka_Profile.jpg",
+    },
+    {
+      name: "Vermouth",
+      url: "https://www.detectiveconanworld.com/wiki/images/1/1b/EP813-Vermouth.jpg",
+    },
+    {
+      name: "Chianti",
+      url: "https://www.detectiveconanworld.com/wiki/images/a/af/Chianti_Profile.jpg",
+    },
     {
       name: "The Culprit",
       url: "https://www.detectiveconanworld.com/wiki/images/a/a0/BossBlackshadow.jpg",
