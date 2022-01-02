@@ -13,6 +13,7 @@ const App = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    if (score > topScore) setTopScore(score);
     if (clicked.length === images.length) {
       setLevel(level + 1);
       setClicked([]);
@@ -34,6 +35,7 @@ const App = () => {
       setIsGameOver(true);
     } else {
       setScore(score + 1);
+
       setClicked([...clicked, name]);
     }
 
