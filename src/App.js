@@ -1,16 +1,44 @@
 import Stats from "./Components/Stats";
 import Images from "./Components/Images";
 import { useState } from "react";
-import { shuffle } from "./Components/Utils";
 import ImagesData from "./Components/ImagesData";
 
 const App = () => {
   const [images, setImages] = useState(ImagesData[0]);
+  const [score, setScore] = useState(0);
+  const [topScore, setTopScore] = useState(0);
+  const [clicked, setClicked] = useState([]);
+  const [level, setLevel] = useState(1);
+
   const handleClick = (name) => {
-    setImages([]);
-    setTimeout(() => {
-      setImages(shuffle(images));
-    }, 50);
+    // check if name is in clicked array
+    if (clicked.includes(name)) {
+      // if name is in clicked array
+      // check if score is greater than top score
+      if (score > topScore) {
+        // if score is greater than top score
+        // set top score to score
+        setTopScore(score);
+      }
+      // set score to 0
+      setScore(0);
+      // set clicked to empty array
+      setClicked([]);
+    } else {
+      // if name is not in clicked array
+      // set score to score + 1
+      setScore(score + 1);
+      // set clicked to clicked array with name
+      setClicked([...clicked, name]);
+    }
+    // shuffle images in array
+    const a = [...images];
+    for (let i = a.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    // set images to shuffled array
+    setImages(a);
   };
 
   return (
@@ -25,7 +53,7 @@ const App = () => {
             You move to next level when you click on all the images.
           </p>
         </div>
-        <Stats />
+        <Stats score={score} topScore={topScore} level={level} />
       </div>
 
       <Images images={images} handleClick={handleClick} />
